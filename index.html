@@ -45,6 +45,18 @@
         opacity: 0.8;
     }
 
+    a {
+        text-decoration: none;
+    }
+
+    .credits:hover {
+        color: palevioletred;
+    }
+
+    a:hover {
+        color: white;
+    }
+
     button{
         display: block;
         margin: 0 auto;
@@ -53,13 +65,12 @@
         border-radius: 6px;
         transition: all 150ms ease-in-out;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+        
     }
 
     button:hover {
         background-color: rgb(255, 132, 152);
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
     }
 
     footer{
@@ -103,7 +114,20 @@
 
     .dark .theme-button{
         background-color: pink;
-        color: black;
+        color: rgb(0, 0, 0);
+    }
+
+    .dark .theme-button:hover {
+        background-color: white;
+        color: palevioletred;
+    }
+
+    .dark .credits{
+        color: pink;
+    }
+
+    .dark .credits:hover {
+        color: palevioletred;
     }
 
 
@@ -122,8 +146,12 @@
     <img src="https://images.unsplash.com/photo-1717500251716-27057c48ace4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image6"> -->
     </div>
     <p>Pilates is a low impact exercise method that focuses on strengthening the core, improving flexibility, posture, and body awareness. It combines controlled movements, breathwork, and alignment to build strength, especially in the deep abdominal muscles, back, and pelvic floor. Pilates can be done on a mat or using specialized equipment like the reformer, and it's suitable for all fitness levels, often used for rehabilitation and injury prevention.</p>
-    <button>Learn about Pilates</button>
-    <footer>Coded by Jasmin</footer>
+    <button>    
+        <a href="https://health.clevelandclinic.org/everything-you-want-to-know-about-pilates" target="_blank">Learn about Pilates</a>
+    </button>
+    <footer>💗 Coded by 
+        <a href="https://github.com/Jarabey" target="_blank" class="credits">Jasmin 💗</a>
+</footer>
 
     <script>
         function changeTheme() {
