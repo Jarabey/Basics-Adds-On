@@ -7,7 +7,7 @@
 </head>
 <style>
     body {
-        background-color: pink;
+        background: pink;
     }
 
     h1{
@@ -91,6 +91,16 @@
         width: 100%;
     }
 
+    .dark{
+        background: rgb(41, 41, 41);
+        color: white;
+    }
+
+    .dark .container{
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+
 </style>
 <body>
     <button class="theme-button">Dark theme</button>
@@ -108,6 +118,20 @@
     <p>Pilates is a low impact exercise method that focuses on strengthening the core, improving flexibility, posture, and body awareness. It combines controlled movements, breathwork, and alignment to build strength, especially in the deep abdominal muscles, back, and pelvic floor. Pilates can be done on a mat or using specialized equipment like the reformer, and it's suitable for all fitness levels, often used for rehabilitation and injury prevention.</p>
     <button>Learn about Pilates</button>
     <footer>Coded by Jasmin</footer>
+
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body");
+            if (body.classList.contains("dark")) {
+                body.classList.remove("dark");
+            } else {
+            body.classList.add("dark");
+        }
+    }
+
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+    </script>
     </div>
 </body>
 </html>
